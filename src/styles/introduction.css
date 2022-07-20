@@ -1,0 +1,127 @@
+.introduction {
+  align-items: center;
+}
+
+.introduction h1 {
+  font-family: 'Fira Sans', 'Arial', 'sans-serif';
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 1.875rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.introduction h1::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -25px;
+  left: -45px;
+  width: 130px;
+  height: 130px;
+  background-image: url('../img/detalhe.svg');
+}
+
+.introduction p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media screen and (max-width : 1000px){
+  .introduction h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width : 800px){
+  .introduction {
+    grid-template-columns: 1fr 1fr;
+  }
+  .introduction h1 {
+    font-size: 2rem;
+  }
+
+  .introduction h1::before {
+    top: -45px;
+    left: -55px;
+  }
+}
+
+@media screen and (max-width : 490px){
+  .introduction {
+    grid-template-columns: 1fr;
+    background-color: #0f0f0f;
+  }
+
+  .introduction img {
+    display: none;
+  }
+
+  .introduction h1::before {
+    object-fit: cover;
+    object-position: center right;
+    height: 40px;
+    left: -55px;
+    top: -45px;
+  }
+  
+  .introduction h1 {
+    width: fit-content;
+    background-image: linear-gradient(90deg, #CAEC36, #7ADB1E, #7ADB1E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: grab;
+    animation: rainbow-text-simple-animation-rev 0.3s ease forwards;
+  }
+
+  .introduction h1:hover {
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+  }
+
+  @keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+  @keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+      }
+    25% {
+      background-size: 100%;
+      background-image: linear-gradient(45deg, #CAEC36, #CAEC36, #7ADB1E);
+    }
+    37.5% {
+      background-size: 100%;
+      background-image: linear-gradient(45deg, #CAEC36, #CAEC36, #7ADB1E);
+    }
+     50% {
+      background-size: 100%;
+      background-image: linear-gradient(45deg, #7ADB1E #CAEC36, #CAEC36, #CAEC36, #7ADB1E);
+    }
+    65% {
+      background-size: 100%;
+      background-image: linear-gradient(45deg,#7ADB1E, #CAEC36, #CAEC36, #CAEC36);
+    }
+    75% {
+      background-size: 100%;
+      background-image: linear-gradient(45deg,#7ADB1E, #7ADB1E,#CAEC36, #CAEC36, #CAEC36);
+    }
+    100% {
+        background-size: 100%;
+        background-image: linear-gradient(45deg, #7ADB1E, #7ADB1E, #CAEC36, #CAEC36);
+    }
+}
+
+  .introduction p {
+    color: #f2f2f2;
+  }
+}

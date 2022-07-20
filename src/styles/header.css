@@ -1,0 +1,31 @@
+.page-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 2.5rem 1.25rem;
+}
+
+.page-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  justify-content: center;
+}
+
+.page-menu a {
+  background-color: #f9f9f9;
+  color: #141414;
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  padding: .625rem 1.25rem;
+}
+
+@media screen and (max-width : 800px) {
+    .page-header {
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+}
