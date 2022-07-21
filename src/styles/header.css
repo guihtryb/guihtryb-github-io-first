@@ -4,7 +4,20 @@
   justify-content: space-between;
   margin: 0 auto;
   max-width: 75rem;
-  padding: 2.5rem 1.25rem;
+  padding: 2rem 1.25rem;
+}
+
+.page-header span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.logo {
+  padding: .625rem;
+  border-radius: 100%;
+  color: #7ADB1E;
+  background-color: #f9f9f9;
 }
 
 .page-menu {
