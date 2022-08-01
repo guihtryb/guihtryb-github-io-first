@@ -1,7 +1,6 @@
-@media (min-width : 1000px) {
+@media (min-height : 630px) and (min-width : 1000px) {
   .introduction {
-    height: 70vh;
-    margin-top: -1rem;
+    height: 71vh;
     position: relative;
   }
 
@@ -13,28 +12,29 @@
     transform: rotate(90deg);
     position: absolute;
     top: 72vh;
-    left: 48%;
+    left: 48.25%;
     animation: rollDown 2s infinite;
   }
 
-  .introduction-card {
+  .hi-roles {
     margin: 0 auto;
   }
 
-  .hi-container {
-    display: flex;
-    justify-content: center;
+  h1.hi,
+  .hi-roles h1 {
+    position: relative;
+    top: -1.5rem;
   }
 
   @keyframes rollDown {
     0% {
-      top: 70vh;
+      top: 68vh;
     }
     50% {
-      top: 75vh;
+      top: 73vh;
     }
     100% {
-      top: 70vh;
+      top: 68vh;
     }
   }
 }
@@ -42,7 +42,6 @@
 .introduction {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  max-height: 70vh;
   align-items: center;
 }
 
@@ -66,7 +65,7 @@
 
 .name:hover {
     animation: rainbow-text-simple-animation 0.5s ease-in forwards;
-  }
+}
 
 .introduction h1:not(.hi)::before {
   content: '';
@@ -92,23 +91,44 @@
 
 @media screen and (max-width : 800px){
   .introduction {
-    grid-template-columns: 1fr 1fr;
-  }
-  .introduction h1, .name {
-    font-size: 2rem;
+    height: 100%;
   }
 
-  .introduction h1::before {
-    top: -45px;
-    left: -55px;
+  .introduction h1, .name {
+    font-size: 2.75rem;
   }
 }
 
-@media screen and (max-width : 490px){
+@media screen and (max-width : 610px){
+  .container.introduction {
+    gap: 0;
+  }
+
   .introduction {
     grid-template-columns: 1fr;
     background-color: #0f0f0f;
-    max-height: 50vh;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .hi-message {
+    padding: 0;
+  }
+
+  .hi {
+    width: auto;
+  }
+
+  .hi-roles h1,
+  .hi-roles p {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .introduction h1, .name {
+    font-size: 2rem;
   }
 
   .introduction .hi, .name  {
@@ -117,7 +137,7 @@
   }
 
   .introduction .hi::after {
-    content: '👋';
+    content: ' 👋';
   }
   
   .introduction h1:not(.hi) {
@@ -205,5 +225,30 @@
   100% {
       background-size: 100%;
       background-image: linear-gradient(45deg, #7ADB1E, #7ADB1E, #CAEC36, #CAEC36);
+  }
+}
+
+@media (max-width : 490px) {
+  .introduction {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .introduction h1, .name {
+    font-size: 1.75rem;
+  }
+
+  .introduction p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width : 440px) {
+  .introduction h1, .name {
+    font-size: 1.5rem;
+  }
+
+  .introduction p {
+    font-size: 1.2rem;
   }
 }
