@@ -1,0 +1,19 @@
+.hover-link {
+  width: fit-content;
+  position: relative;
+}
+
+.hover-link:after {
+  background: currentColor;
+  display: block;
+  content: "";
+  height: 2px;
+  margin-top: 2px;
+  position: absolute;
+  transition: width 0.3s;
+  width: 0px;
+}
+
+.hover-link:hover::after  {
+  width: 100%;
+}

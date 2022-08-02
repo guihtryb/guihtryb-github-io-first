@@ -37,8 +37,9 @@
   width: .25rem;
 }
 
-.company-name {
+.company-name a {
   font-weight: 700;
+  color: #141414;
 }
 
 .company-year {
