@@ -15,22 +15,46 @@
   color: #ccc;
 }
 
-.footer-contact li {
+.footer-contact li a {
+  position: relative;
+  color: #b2b2b2;
+  transition: color ease 0.2s;
+}
+
+.footer-contact li a:hover {
+  color: #fff;
+}
+
+.footer-contact .email {
+  color: #fff;
+  display: block;
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 1.1;
-  color: #fff;
   margin-bottom: 1.75rem;
+  width: fit-content;
 }
 
-.footer .footer-contact li a {
-  color: #fff;
+.footer-contact li a:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 4px;
+  transition: width 0.3s;
+  position: absolute;
+  width: 0px;
+}
+
+.footer-contact li a:hover::after  {
+  width: 100%;
 }
 
 .footer-copy {
   grid-column: 1 / -1;
   font-size: 1.125rem;
   color: #8f8f8f;
+  text-transform: capitalize;
 }
 
 @media (max-width : 800px) {

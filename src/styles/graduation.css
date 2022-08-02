@@ -28,12 +28,25 @@
   color: #000;
 }
 
-.graduation-text {
+.graduation-text,
+.graduation-text a
+ {
   font-size: 1.5rem;
   line-height: 1.33;
   max-width: 40ch;
   margin-bottom: 60px;
   color: #a3a3a3;
+}
+
+.graduation-text a {
+  color: #bebebe;
+  border-bottom: 2px solid #bebebe;
+  transition: all ease 0.2s;
+}
+
+.graduation-text a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .graduation-text strong {
