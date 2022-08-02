@@ -1,0 +1,120 @@
+.container[data-modal="container"] {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  min-width: 100vw;
+  z-index: 100;
+}
+
+.modal {
+  background: white;
+  box-shadow: 0 0 0 5px #111;
+  padding: 40px;
+  position: relative;
+  min-width: 15rem;
+  height: 80vh;
+  width: 85vw;
+  top: -40px;
+  left: -30px;
+}
+
+.close {
+  background: #a03;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 35px;
+  position: absolute;
+  right: -1.2rem;
+  top: -1.2rem;
+  width: 35px;
+}
+
+.modal li {
+  width: fit-content;
+  margin: 0 auto;
+}
+.modal a {
+  display: flex;
+  align-items: center;
+  background: #222;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0.5rem 1.25rem;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  font-family: 'Arial', monospace;
+  color: #fff;
+  font-weight: 700;
+  width: fit-content;
+  transition: all ease 0.2s;
+}
+
+.modal a:hover {
+  background-color: #111;
+}
+
+.github-link::before {
+  content: url('../img/icons/github.svg');
+  margin-right: 10px;
+}
+
+@keyframes showModal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -200px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.container[data-modal="container"].active {
+  display: flex;
+}
+
+.container[data-modal="container"].active .modal {
+  animation: showModal 0.5s;
+}
+
+.project-grid {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.project-grid video {
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+@media (max-width : 1000px) {
+  .modal {
+    height: 70vh;
+    width: 80vw;
+    top: -20px;
+    left: -20px;
+  }
+}
+
+@media (max-width : 1000px) {
+  .modal {
+    height: 65vh;
+    width: 65vw;
+    top: -15px;
+    left: -15px;
+  }
+}

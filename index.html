@@ -57,7 +57,7 @@
     </div>
     <div class="company">
       <span class="company-year">2022</span>
-      <h3 class="company-name">Get it!</h3>
+      <h3 class="company-name" data-modal="show" data-title="get-it"><a class="hover-link" href="/">Get it!</a></h3>
       <span class="company-role">Desenvolvedor Júnior</span>
       <p class="company-text">
         Get it é um e-commerce com sistema de pontos para o consumidor. O projeto foi feito com React, CSS, NodeJS, Sequelize e
@@ -68,6 +68,7 @@
         <li>CSS</li>
         <li>NodeJS</li>
         <li>TypeScript</li>
+        <li>UI Design</li>
         <li>Sequelize</li>
         <li>MYSQL</li>
       </ul>
@@ -159,6 +160,19 @@
       <p class="footer-copy"> &COPY; Guilherme Viana 2022</p>
     </div>
   </footer>
+  <section class="container" data-modal="container">
+    <div class="modal">
+      <button type="button" data-modal="hide" class="close"> X </button>
+      <div class="project-grid">
+        <video controls>
+          <source src="./videos/GetIt.mp4">
+        </video>
+        <ul>
+          <li><a href="https://github.com/guihtryb/get-it-controle-de-pontos" class="github-link">Ver no GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <script type="module" src="./js/script.js"></script>
 </body>
 </html>
