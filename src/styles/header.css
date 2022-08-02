@@ -8,16 +8,16 @@
 }
 
 .page-header span {
+  cursor: pointer;
   font-size: 1.5rem;
   font-weight: 700;
-  cursor: pointer;
 }
 
 .logo {
-  padding: .625rem;
+  background-color: #f9f9f9;
   border-radius: 100%;
   color: #7ADB1E;
-  background-color: #f9f9f9;
+  padding: .625rem;
 }
 
 .page-menu {
@@ -38,9 +38,8 @@
 }
 
 .page-menu a:hover {
-  box-shadow: inset 140px 0 #7ADB1E;
   color: #f9f9f9;
-  font-weight: 600;
+  box-shadow: inset 140px 0 #7ADB1E;
 }
 
 @media screen and (max-width : 800px) {
@@ -52,7 +51,7 @@
 
 @media screen and (max-width : 380px) {
   .page-header {
-    padding: 1.25rem;
     gap: 1.5rem;
+    padding: 1.25rem;
   }
 }

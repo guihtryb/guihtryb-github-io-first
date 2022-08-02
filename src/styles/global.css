@@ -1,10 +1,10 @@
 *:not(strong) {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
   font-size: 1rem;
   font-weight: 400;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 a:visited {
@@ -23,11 +23,11 @@ img {
 .subtitle {
   font-size: 6.25rem;
   font-weight: 700;
-  word-break: break-all;
-  text-transform: uppercase;
-  max-width: 4ch;
   margin-top: -20px;
+  max-width: 4ch;
   max-width: initial !important;
+  text-transform: uppercase;
+  word-break: break-all;
 }
 
 .container {
@@ -42,8 +42,8 @@ img {
 @media screen and (max-width : 800px) {
   .subtitle {
     font-size: 3rem;
-    text-transform: capitalize;
     max-width: initial;
+    text-transform: capitalize;
   }
 }
 
