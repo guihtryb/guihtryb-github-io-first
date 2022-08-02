@@ -78,7 +78,7 @@
 }
 
 .company-skills li:hover {
-  cursor: grab;
+  cursor: default;
   box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.5);
   transform: translate(0, -0.5rem);
 }
@@ -105,7 +105,7 @@
   }
 
   .company-year::before {
-    content: 'Year:';
+    content: 'Ano:';
     margin-right: 0.25rem;
   }
 }
