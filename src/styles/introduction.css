@@ -1,87 +1,86 @@
-@media (min-width : 1000px) {
+@media (min-height : 630px) and (min-width : 1000px) {
   .introduction {
-    height: 70vh;
-    margin-top: -1rem;
+    height: 71vh;
     position: relative;
   }
 
   .introduction::after {
-    content: '';
+    animation: rollDown 2s infinite;
     background: url('../img/arrow.svg') center no-repeat;
+    content: '';
     height: 52px;
-    width: 52px;
-    transform: rotate(90deg);
+    left: 48.25%;
     position: absolute;
     top: 72vh;
-    left: 48%;
-    animation: rollDown 2s infinite;
+    transform: rotate(90deg);
+    width: 52px;
   }
 
-  .introduction-card {
+  .hi-roles {
     margin: 0 auto;
   }
 
-  .hi-container {
-    display: flex;
-    justify-content: center;
+  h1.hi,
+  .hi-roles h1 {
+    position: relative;
+    top: -1.5rem;
   }
 
   @keyframes rollDown {
     0% {
-      top: 70vh;
+      top: 68vh;
     }
     50% {
-      top: 75vh;
+      top: 73vh;
     }
     100% {
-      top: 70vh;
+      top: 68vh;
     }
   }
 }
 
 .introduction {
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  max-height: 70vh;
   align-items: center;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .introduction h1, .name {
   font-family: 'Fira Sans', 'Arial', 'sans-serif';
   font-size: 4.5rem;
+  font-weight: 700;
   line-height: 1.125;
   margin-bottom: 1.875rem;
-  font-weight: 700;
   position: relative;
 }
 
 .name {
-  background-image: linear-gradient(90deg,#7ADB1E, #7ADB1E);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
-  cursor: grab;
   animation: rainbow-text-rev 0.3s ease forwards;
+  background-clip: text;
+  background-image: linear-gradient(90deg,#7ADB1E, #7ADB1E);
+  cursor: grab;
 }
 
 .name:hover {
-    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
-  }
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
 
 .introduction h1:not(.hi)::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: -25px;
-  left: -45px;
-  width: 130px;
-  height: 130px;
   background-image: url('../img/detalhe.svg');
+  content: '';
+  height: 130px;
+  left: -45px;
+  position: absolute;
+  top: -25px;
+  width: 130px;
+  z-index: -1;
 }
 
 .introduction p {
-  font-size: 1.5rem;
   color: #525252;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width : 1000px){
@@ -92,23 +91,44 @@
 
 @media screen and (max-width : 800px){
   .introduction {
-    grid-template-columns: 1fr 1fr;
-  }
-  .introduction h1, .name {
-    font-size: 2rem;
+    height: 100%;
   }
 
-  .introduction h1::before {
-    top: -45px;
-    left: -55px;
+  .introduction h1, .name {
+    font-size: 2.75rem;
   }
 }
 
-@media screen and (max-width : 490px){
+@media screen and (max-width : 610px){
+  .container.introduction {
+    gap: 0;
+  }
+
   .introduction {
-    grid-template-columns: 1fr;
     background-color: #0f0f0f;
-    max-height: 50vh;
+    grid-template-columns: 1fr;
+    padding-bottom: 4.5rem;
+    padding-top: 4.5rem;
+  }
+
+  .hi-message {
+    padding: 0;
+  }
+
+  .hi {
+    width: auto;
+  }
+
+  .hi-roles h1,
+  .hi-roles p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .introduction h1, .name {
+    font-size: 2rem;
   }
 
   .introduction .hi, .name  {
@@ -117,17 +137,17 @@
   }
 
   .introduction .hi::after {
-    content: '👋';
+    content: ' 👋';
   }
   
   .introduction h1:not(.hi) {
-    width: fit-content;
-    background-image: linear-gradient(90deg, #CAEC36, #7ADB1E, #7ADB1E);
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
-    cursor: grab;
     animation: rainbow-text-simple-animation-rev 0.5s ease forwards;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #CAEC36, #7ADB1E, #7ADB1E);
+    cursor: grab;
+    width: fit-content;
   }
 
   .introduction h1:hover:not(.hi) {
@@ -205,5 +225,30 @@
   100% {
       background-size: 100%;
       background-image: linear-gradient(45deg, #7ADB1E, #7ADB1E, #CAEC36, #CAEC36);
+  }
+}
+
+@media (max-width : 490px) {
+  .introduction {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .introduction h1, .name {
+    font-size: 1.75rem;
+  }
+
+  .introduction p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width : 440px) {
+  .introduction h1, .name {
+    font-size: 1.5rem;
+  }
+
+  .introduction p {
+    font-size: 1.2rem;
   }
 }

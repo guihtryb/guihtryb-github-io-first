@@ -14,14 +14,14 @@
 }
 
 .graduation-container::after {
-  content: '';
   background: url('../img/detalhe.svg') no-repeat center;
-  width: 130px;
-  height: 100px;
-  display: block;
-  position: absolute;
   bottom: -50px;
+  content: '';
+  display: block;
+  height: 100px;
   left: 20px;
+  position: absolute;
+  width: 130px;
 }
 
 .graduation .subtitle {
@@ -31,22 +31,22 @@
 .graduation-text,
 .graduation-text a
  {
+  color: #a3a3a3;
   font-size: 1.5rem;
   line-height: 1.33;
-  max-width: 40ch;
   margin-bottom: 60px;
-  color: #a3a3a3;
+  max-width: 40ch;
 }
 
 .graduation-text a {
-  color: #bebebe;
   border-bottom: 2px solid #bebebe;
+  color: #bebebe;
   transition: all ease 0.2s;
 }
 
 .graduation-text a:hover {
-  color: #fff;
   border-bottom: 2px solid #fff;
+  color: #fff;
 }
 
 .graduation-text strong {
@@ -61,28 +61,28 @@
 }
 
 .institute {
-  flex: 1;
+  background: #000;
+  border-radius: .25rem;
   display: flex;
   flex-direction: column;
-  background: #000;
+  flex: 1;
   padding: 1.25rem;
-  border-radius: .25rem;
   position: relative;
 }
 
 .graduation-type {
-  font-size: 0.875rem;
-  text-transform: uppercase;
   color: #a3a3a3;
+  font-size: 0.875rem;
   margin-bottom: 0.75rem;
+  text-transform: uppercase;
 }
 
 .graduation-course {
+  flex: 1;
   font-size: 1.125rem;
   line-height: 1.4;
   margin-bottom: 2.5rem;
   position: relative;
-  flex: 1;
 }
 
 .courses {
@@ -92,38 +92,38 @@
 }
 
 .graduation-course::before {
+  background: linear-gradient(#b6f829, #67dd0a);
   content: '';
   display: block;
-  width: .25rem;
   height: 1.25rem;
-  background: linear-gradient(#b6f829, #67dd0a);
   left: -1.5rem;
   position: absolute;
+  width: .25rem;
 }
 
 .graduation-institute {
-  font-size: 1.125rem;
   color: #a3a3a3;
+  font-size: 1.125rem;
 }
 
 .graduation-extra h3 {
+  color: #8f8f8f;
   font-size: 0.875rem;
   font-weight: 700;
-  color: #8f8f8f;
-  text-transform: uppercase;
   margin-bottom: 1.875rem;
   position: relative;
+  text-transform: uppercase;
 }
 
 .graduation-extra h3::before {
-  display: block;
-  content: "";
-  height: 1.5rem;
-  width: 1.5rem;
   background: url('../img/cursos.svg') no-repeat center center;
-  position: absolute;
+  content: "";
+  display: block;
+  height: 1.5rem;
   left: -2.25rem;
-  top: -.25rem
+  position: absolute;
+  top: -.25rem;
+  width: 1.5rem;
 }
 
 .languages h3::before {
