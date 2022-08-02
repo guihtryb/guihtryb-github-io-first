@@ -4,7 +4,6 @@ export default class IntroductionHeaderBreaksControl {
   constructor(introduction) {
     this.introduction = document.querySelector(introduction);
     this.introductionBreaks = document.querySelectorAll(`${introduction} br`);
-
     this.removeIntroductionBreaks = debounce(this.removeIntroductionBreaks.bind(this), 600)
   }
 
