@@ -60,7 +60,7 @@
   animation: rainbow-text-rev 0.3s ease forwards;
   background-clip: text;
   background-image: linear-gradient(90deg,#7ADB1E, #7ADB1E);
-  cursor: grab;
+  cursor: default;
 }
 
 .name:hover {
@@ -146,7 +146,7 @@
     animation: rainbow-text-simple-animation-rev 0.5s ease forwards;
     background-clip: text;
     background-image: linear-gradient(90deg, #CAEC36, #7ADB1E, #7ADB1E);
-    cursor: grab;
+    cursor: default;
     width: fit-content;
   }
 
