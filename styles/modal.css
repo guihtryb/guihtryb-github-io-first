@@ -13,7 +13,7 @@
 
 .modal {
   background: white;
-  box-shadow: 0 0 4px 1px #111;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
   padding: 40px;
   position: relative;
   min-width: 15rem;
@@ -24,20 +24,18 @@
 }
 
 .close {
-  background: #a03;
-  border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+  background: #ff3300;
+  border: none;
   color: white;
   cursor: pointer;
-  font-family: monospace;
+  font-family: 'Arial', monospace;
   font-size: 1rem;
   font-weight: 700;
-  height: 35px;
+  height: 25px;
   position: absolute;
-  right: -1.2rem;
-  top: -1.2rem;
-  width: 35px;
+  right: -0.05rem;
+  top: -0.05rem;
+  width: 30px;
 }
 
 .modal li {
