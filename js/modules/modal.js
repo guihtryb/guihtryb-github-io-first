@@ -57,17 +57,23 @@ export default class Modal {
     return projectImage;
   }
 
-  createAnchorItems(anchorInfos, list) {
-    const gitHubItem = document.createElement('li');
+  createAnchor(link, anchorClass, anchorText) {
+    const anchor = document.createElement('a');
 
+    anchor.href = link;
+    anchor.classList.add(anchorClass);
+    anchor.innerText = anchorText;
+    anchor.target = "_blank";
+
+    return anchor;
+  }
+
+  addLinkListItem(anchorInfos, list) {
     const { hasSite, gitHubLink, siteLink } = anchorInfos;
 
-    const gitHubAnchor = document.createElement('a');
+    const gitHubItem = document.createElement('li');
 
-    gitHubAnchor.href = gitHubLink;
-    gitHubAnchor.classList.add('github-link');
-    gitHubAnchor.innerText = "Ver no Github";
-    gitHubAnchor.target = "_blank"
+    const gitHubAnchor = this.createAnchor(gitHubLink, 'github-link', 'Ver no GitHub');
 
     gitHubItem.appendChild(gitHubAnchor);
 
@@ -76,11 +82,7 @@ export default class Modal {
     if (hasSite) {
       const siteItem = document.createElement('li');
 
-      const siteAnchor = document.createElement('a');
-      siteAnchor.href = siteLink;
-      siteAnchor.classList.add('site-link');
-      siteAnchor.innerText = "Visitar site";
-      siteAnchor.target = "_blank"
+      const siteAnchor = this.createAnchor(siteLink, 'site-link', 'Visitar site');
 
       siteItem.appendChild(siteAnchor);
 
@@ -117,7 +119,7 @@ export default class Modal {
 
     projectGallery.appendChild(rightArrow);
 
-    this.createAnchorItems(anchorInfos, projectLinksList);
+    this.addLinkListItem(anchorInfos, projectLinksList);
 
     projectGrid.appendChild(projectLinksList);
 
