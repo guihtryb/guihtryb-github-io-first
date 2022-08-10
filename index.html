@@ -37,12 +37,12 @@
     <h2 class="subtitle">Experiência</h2>
     <div>
       <p class="experience-text">
-        Desenvolvo projetos simples como o Bikecraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> e projetos <strong>Full-Stack</strong> como o e-commerce Get It utilizando <strong>NodeJS</strong>, <strong>Docker</strong>, <strong>MYSQL</strong>, <strong>CSS</strong> e <strong>ReactJS</strong>.
+        Desenvolvo projetos <strong>Front-End</strong> como o Bikecraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> e projetos <strong>Full-Stack</strong> como o e-commerce Get It utilizando <strong>NodeJS</strong>, <strong>Docker</strong>, <strong>MYSQL</strong>, <strong>CSS</strong> e <strong>ReactJS</strong>.
       </p>
     <div class="company">
       <span class="company-year">2022</span>
-      <h3 class="company-name"><a href="/bikcraft" class="hover-link">Bikcraft</a></h3>
-      <span class="company-role">Desenvolvedor Júnior</span>
+      <h3 class="company-name" data-modal="show" data-project="bikcraft"><a class="hover-link" href="/">Bikcraft</a></h3>
+      <span class="company-role">Front-End</span>
       <p class="company-text">
         No projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript do site.
       </p>
@@ -56,8 +56,8 @@
     </div>
     <div class="company">
       <span class="company-year">2022</span>
-      <h3 class="company-name" data-modal="show" data-title="get-it"><a class="hover-link" href="/">Get it!</a></h3>
-      <span class="company-role">Desenvolvedor Júnior</span>
+      <h3 class="company-name" data-modal="show" data-project="getIt"><a class="hover-link" href="/">Get it!</a></h3>
+      <span class="company-role">Full-Stack</span>
       <p class="company-text">
         Get it é um e-commerce com sistema de pontos para o consumidor. O projeto foi feito com React, CSS, NodeJS, Sequelize,
         SQL e empacotado com Docker. Todo o projeto foi feito do zero.
@@ -67,17 +67,18 @@
         <li>CSS</li>
         <li>NodeJS</li>
         <li>TypeScript</li>
-        <li>UI Design</li>
+        <li>Mocha - Chai - Sinon</li>
+        <li>React Testing Library</li>
         <li>Sequelize</li>
         <li>SQL</li>
       </ul>
     </div>
     <div class="company">
       <span class="company-year">2022</span>
-      <h3 class="company-name">Delivery App</h3>
-      <span class="company-role">Desenvolvedor Júnior</span>
+      <h3 class="company-name external-link"><a class="hover-link" href="https://github.com/guihtryb/delivery-app" target="_blank">Delivery App</a></h3>
+      <span class="company-role">Back-End</span>
       <p class="company-text">
-        Aplicativo de delivery de bebidas, atuei no desenvolvimento back-end, tendo também realizado a integração do App com a API e atuado nas funcionalidades do front-end.
+        Aplicativo de delivery de bebidas, atuei no desenvolvimento back-end, tendo também realizado a integração do App com a API e atuado em funcionalidades no front-end.
       </p>
       <ul class="company-skills">
         <li>ReactJS</li>
@@ -87,9 +88,25 @@
       </ul>
     </div>
     <div class="company">
+      <span class="company-year">2022</span>
+      <h3 class="company-name external-link"><a class="hover-link" href="https://github.com/guihtryb/car-shop" target="_blank">Car Shop</a></h3>
+      <span class="company-role">Back-End</span>
+      <p class="company-text">
+        Api para gerenciar uma concessionária de veículos, desenvolvida com NodeJS e MongoDb seguindo o paradigma POO.
+      </p>
+      <ul class="company-skills">
+        <li>MongoDB</li>
+        <li>NodeJs</li>
+        <li>POO</li>
+        <li>Mocha</li>
+        <li>Chai</li>
+        <li>Sinon</li>
+      </ul>
+    </div>
+    <div class="company">
       <span class="company-year">2021</span>
-      <h3 class="company-name">Nomad' Recipes</h3>
-      <span class="company-role">Desenvolvedor Júnior</span>
+      <h3 class="company-name external-link"><a class="hover-link" href="https://github.com/guihtryb/recipes-app" target="_blank">Nomad' Recipes</a></h3>
+      <span class="company-role">Front-End</span>
       <p class="company-text">
         Pensado para ser mobile, trata-se de um App com drinks e refeições de todo o mundo. Fui responsável pelo design do projeto e funções no front-end.
       </p>
@@ -104,10 +121,6 @@
     <div class="graduation-container">
       <h2 class="subtitle">Formação</h2>
       <div>
-        <!--wip <p class="graduation-text">
-          Minha mais recente formação foi a conclusão do curso de Desenvolvimento Web da <a href="https://www.betrybe.com/" target="_blank">Trybe</a>.
-          Além disso me mantenho sempre atualizado com cursos intensivos online.
-        </p> -->
         <ul class="institute-list">
           <li class="institute">
             <span class="graduation-type">Médio &mdash; Técnico</span>
@@ -129,7 +142,6 @@
           <div class="courses">
             <h3>Cursos Intesivos</h3>
             <ul>
-              <li>UI Design Avançado <span>30h</span></li>
               <li>UX Design &ndash; Heurísticas <span>16h</span></li>
               <li>JavaScript Completo ES6+ <span>72h</span></li>
             </div>
@@ -160,14 +172,6 @@
   <section class="container" data-modal="container">
     <div class="modal">
       <button type="button" data-modal="hide" class="close"> X </button>
-      <div class="project-grid">
-        <video controls>
-          <source src="./videos/GetIt.mp4">
-        </video>
-        <ul>
-          <li><a href="https://github.com/guihtryb/get-it-controle-de-pontos" class="github-link">Ver no GitHub</a></li>
-        </ul>
-      </div>
     </div>
   </section>
   <script type="module" src="./js/script.js"></script>
