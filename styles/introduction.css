@@ -19,15 +19,11 @@
    .hi-roles {
     margin: 0 auto;
   } 
-
-  .hi-roles h1
-  {
-    max-width: 510px;
-    margin: 0 auto;
-  }
-
+  
   .hi,
   .hi-roles h1 {
+    margin: 0 auto;
+    max-width: 510px;
     position: relative;
     top: -1.5rem;
   }
