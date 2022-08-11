@@ -23,3 +23,9 @@
   top: 15px;
   margin-left: 10px;
 }
+
+@media (max-width : 470px) {
+  .external-link::after {
+    top: 7px;
+  }
+}
