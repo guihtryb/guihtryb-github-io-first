@@ -100,6 +100,20 @@
   color: #fff;
 }
 
+.hover-institute::after {
+  content: url('../img/external-link.svg');
+  position: absolute;
+  margin-left: 7.5px;
+  bottom: 14px;
+  right: 10px;
+  opacity: 0.6;
+  transition: opacity ease 0.2s;
+}
+
+.hover-institute:hover::after {
+  opacity: 1;
+}
+
 .institute:hover  {
   transform: translateY(-10px);
 }
