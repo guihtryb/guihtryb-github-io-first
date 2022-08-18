@@ -37,6 +37,10 @@
   width: .25rem;
 }
 
+.company-name::after {
+  content: ' • Ver projeto';
+}
+
 .company-name a {
   font-weight: 700;
   color: #141414;
