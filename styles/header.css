@@ -15,9 +15,22 @@
 
 .logo {
   background-color: #f9f9f9;
-  border-radius: 100%;
+  border-radius: 50%;
+  height: 30px;
   color: #7ADB1E;
   padding: .625rem;
+  width: fit-content;
+}
+
+.logo span {
+  display: inline-block;
+  width: 1ch;
+  overflow: hidden;
+}
+
+.logo:hover span, .logo:hover {
+  width: fit-content;
+  border-radius: 16px;
 }
 
 .page-menu {
