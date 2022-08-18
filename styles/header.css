@@ -28,9 +28,15 @@
   overflow: hidden;
 }
 
-.logo:hover span, .logo:hover {
+.logo:hover span,
+.logo:hover {
   width: fit-content;
   border-radius: 16px;
+}
+
+.logo:hover span + span::before {
+  content: ' ';
+  padding: 2px;
 }
 
 .page-menu {
